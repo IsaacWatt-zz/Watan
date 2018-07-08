@@ -7,19 +7,9 @@ The executable is provided, feel free to read through the following documentatio
 ## Table of Contents
 
 - [How to play](#how-to-play)
-    - [item1](#item1)
 
 - [How to run Watan](#how-to-run)
-    - [item2](#item2)
 
 ### How to Play
 
-#### item1
-
-A [item1] `code` hello 
-
 ### How to run Watan
-
-#### item2
-
-[item2] hello.
