@@ -9,9 +9,8 @@ The executable is provided, feel free to read through the following documentatio
 
 - [How to Play](#how-to-play)
 
-- [How to run Watan](#how-to-run)
-  - [Command Line Interface](#command-line)
-  - [Formatting load files](#formatting)
+- [How to run Watan](#how-to-run-watan)
+  - [Command Line Interface](#command-line-interface)
 
 ### How to Play
 
