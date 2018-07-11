@@ -53,3 +53,5 @@ where `<Brick>` is the number of bricks the builder owns (similarly with `<Energ
 `<goose>` is a number that represents which tile the goose is on. 
 
 #### Board file format
+
+Each board stores the order of tiles and their respective types, along with their associated probabilities. The format is as follows: 
