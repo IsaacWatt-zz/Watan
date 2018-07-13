@@ -10,8 +10,10 @@ The executable is provided, feel free to read through the following documentatio
 - [How to Play](#how-to-play)
   - [Basic Setup](#basic-setup)
   - [Resources and Buildables](#resources-and-buildables)
-  - [Placement](#placement)
-  - [The Goose](#placement)
+  - [Rolling and Results](#rolling-and-results)
+  - [The Goose](#the-goose)
+  - [Trading](#trading)
+  - [Commands](#commands)
   
 - [How to run Watan](#how-to-run-watan)
   - [Command Line Interface](#command-line-interface)
@@ -44,8 +46,33 @@ monopoly: to be played with the name of a resource. Once played, every player mu
 knight: allows you to move the Goose, and steal from a player adjacent to the tile where you placed the Goose. 
 ```
 
-#### The Goose
+#### Rolling and Results
+At the beginning of each turn a `Builder` chooses between `loaded` and `fair` dice, and rolls. The role result follows basic probability if the die are `fair`, however if `loaded` die are chosen, the `Builder` gets to choose the result of the roll (an int from 2 to 12 inclusive). If a 2, 3, 4, 5, 6, 8, 9, 10, 11, or 12 is rolled, all `Builders` with a `Basement`, `House`, or `Tower` adjacent to that property recieve x resources depending on the type of propery of that titles type. If a 7 is rolled, every player with > 7 cards must discard half their deck (rounding down on odd numbers). Also, the `Builder` whom rolled the 7 gets to place the `Goose` whose significance is described below. 
 
+#### The Goose
+The goose is a piece that is placed on the board (initally on the `Park` tile, and thus has no effect on the game). When either a 7 is rolled, or a `knight` card is placed, that player gets to move the `Goose` piece. The tile in which the player places the `Goose` on, robs all player adjacent to that tile from receiving resources from it. Thus, if the `Goose` is on a `Wifi` tile associated with the die roll of 5, then if as 5 is rolled no one adjacent to that tile recieves any `Wifi`. Also, the player whom placed the `Goose` on that tile gets to steal exactly 1 random resource card from any `Builder` who is adjacent to that tile. The `Goose` then stays on that tile until it is moved by another `Builder`. 
+
+#### Trading
+on each `Builders` turn, they are allowed to propose trades with other `Builders`, or trade with the bank for a 4:1 ratio. That is, they would have to give 4 of one resource type to recieve 1 of any resource. When trading with another `Builder` you can run the command `trade <colour> <give> <take>` where `<colour>` is the colour of the builder whom you want to trade, `<give>` is the resource you are giving, and `<take>` is the resource you are taking. The table is then turnt to the Builder with colour `<colour>` who can acceot or deny your trade. 
+
+#### Commands
+Each `Builder` can run any of the following commands on their turn as many times as they would like, with their turn ending when they enter `next`. The commands are as follows: 
+```
+board
+status  
+residences
+build-road <path#>
+build-res <housing#>
+improve <housing#>
+trade <colour> <give> <take>
+trade-bank <give> <take>
+buy-dev
+devs
+play-dev <card (vp, monopoly (card), knight)>
+next
+save <file>
+help
+```
 
 ### How to run Watan
 
