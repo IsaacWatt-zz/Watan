@@ -55,3 +55,17 @@ where `<Brick>` is the number of bricks the builder owns (similarly with `<Energ
 #### Board file format
 
 Each board stores the order of tiles and their respective types, along with their associated probabilities. The format is as follows: 
+
+```
+0 represents Brick
+1 represents Energy
+2 represents Glass
+3 represents Heat
+4 represents Wifi
+5 represents Park
+```
+Each resource is followed by its probablity of being rolled from top to bottom. A sample board may look as such: 
+
+`1 10 0 3 3 5 1 4 5 7 3 10 2 11 1 3 3 8 0 2 0 6 1 8 4 12 1 5 4 11 3 4 4 6 3 9 3 9`
+
+This would have the very top tile as an Energy with probability 10, followed by a Brick with probability 3, ect. 
