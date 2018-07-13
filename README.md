@@ -9,6 +9,7 @@ The executable is provided, feel free to read through the following documentatio
 
 - [How to Play](#how-to-play)
   - [Basic Setup](#basic-setup)
+  - [Resources and Buildables](#resources-and-buildables)
   
 - [How to run Watan](#how-to-run-watan)
   - [Command Line Interface](#command-line-interface)
@@ -20,6 +21,18 @@ The executable is provided, feel free to read through the following documentatio
 #### Basic Setup 
 Watan is a grid structure made up of 19 tiles. Each corner of a hex is refered to as a `Property` and each edge is
 a `Path`. In Watan, there are 4 players, called `Builders` that take turn rolling virtual dice to determine which players will be given resources for that turn. `Builders` can trade amongst each other to gain advantages, and complete their goals. The first `Builder` to obtain 10 victory points wins the game. 
+
+#### Resources and Buildables
+In Watan their are 5 resources, 
+`Brick`, `Energy`, `Glass`, `Heat`, `Wifi`, and `Park`. Each of these are present on the board, and thus if a `Builder` is on one of these tiles they will recieve that respective resource. There is also a `Park` tile, however it is resourceless and any Builder adjacent to it will not receive any resource from it. There are also items for `Builders` to make, called `Buildables`. These include (with their associated price), 
+
+```
+Road: 1 Heat, 1 Wifi
+Basement: 1 Brick, 1 Energy, 1 Glass, 1 Wifi
+House: 2 Glass, 3 Heat
+Tower: 3 Brick, 2 Energy, 2 Glass, 1 Wifi, 2 Heat
+Dev Card: 1 Heat, 1 Energy, 1 Wifi
+```
 
 ### How to run Watan
 
