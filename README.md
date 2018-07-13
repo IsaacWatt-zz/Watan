@@ -8,7 +8,8 @@ The executable is provided, feel free to read through the following documentatio
 ## Table of Contents
 
 - [How to Play](#how-to-play)
-
+  - [Basic Setup](#basic-setup)
+  
 - [How to run Watan](#how-to-run-watan)
   - [Command Line Interface](#command-line-interface)
   - [Game file format](#game-file-format)
@@ -16,6 +17,9 @@ The executable is provided, feel free to read through the following documentatio
 
 ### How to Play
 
+#### Basic Setup 
+Watan is a grid structure made up of 19 tiles. Each corner of a hex is refered to as a `Property` and each edge is
+a `Path`. In Watan, there are 4 players, called `Builders` that take turn rolling virtual dice to determine which players will be given resources for that turn. `Builders` can trade amongst each other to gain advantages, and complete their goals. The first `Builder` to obtain 10 victory points wins the game. 
 
 ### How to run Watan
 
