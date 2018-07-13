@@ -10,6 +10,8 @@ The executable is provided, feel free to read through the following documentatio
 - [How to Play](#how-to-play)
   - [Basic Setup](#basic-setup)
   - [Resources and Buildables](#resources-and-buildables)
+  - [Placement](#placement)
+  - [The Goose](#placement)
   
 - [How to run Watan](#how-to-run-watan)
   - [Command Line Interface](#command-line-interface)
@@ -27,12 +29,23 @@ In Watan their are 5 resources,
 `Brick`, `Energy`, `Glass`, `Heat`, `Wifi`, and `Park`. Each of these are present on the board, and thus if a `Builder` is on one of these tiles they will recieve that respective resource. There is also a `Park` tile, however it is resourceless and any Builder adjacent to it will not receive any resource from it. There are also items for `Builders` to make, called `Buildables`. These include (with their associated price), 
 
 ```
-Road: 1 Heat, 1 Wifi
-Basement: 1 Brick, 1 Energy, 1 Glass, 1 Wifi
-House: 2 Glass, 3 Heat
-Tower: 3 Brick, 2 Energy, 2 Glass, 1 Wifi, 2 Heat
+Road: 1 Heat, 1 Wifi 
+Basement: 1 Brick, 1 Energy, 1 Glass, 1 Wifi (worth 1 victory point)
+House: 2 Glass, 3 Heat (worth 2 victory points)
+Tower: 3 Brick, 2 Energy, 2 Glass, 1 Wifi, 2 Heat (worth 3 victory points)
 Dev Card: 1 Heat, 1 Energy, 1 Wifi
 ```
+
+A `road` can only be placed adjacent to either a House, Basement or Tower of the same colour, or connected to another road of the same colour. A `Basement` can only be build on corner tiles or `Properties` if there is not another Basement, House or Tower already there or adjacent to it. Also a `Basement` can only be build if it is attached to a road of the same colour (with the exception of the first 2 that are placed at the beginning of the game). Thus, each Building must be a minimum path of length 2 apart. A `Basement` can be upgraded to a `House` (giving 2 resources of that type as opposed to 1). A `House` can be upgraded to a `Tower` (3 resources as opposed to 2). A Dev Card is a "mystery" card which may be one of the following: 
+
+```
+vp: gives you one additional victory point
+monopoly: to be played with the name of a resource. Once played, every player must give you all of their cards of that resource type. 
+knight: allows you to move the Goose, and steal from a player adjacent to the tile where you placed the Goose. 
+```
+
+#### The Goose
+
 
 ### How to run Watan
 
