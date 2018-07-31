@@ -6,19 +6,25 @@ This project has recieived academic credit through the University of Waterloo, a
 The executable is provided, feel free to read through the following documentation and play Watan!
 
 ## Interface
+
 <table align="center">
     <tr>
         <td>
-            <img src="https://github.com/IsaacWatt/Watan/blob/master/docs/board1.png" width="250px">
+            <img src="https://github.com/IsaacWatt/Watan/blob/master/docs/board1.png" width="300px">
         </td>
         <td>
-            <img src="https://github.com/IsaacWatt/Watan/blob/master/docs/board2.png" width="250px">
+            <img src="https://github.com/IsaacWatt/Watan/blob/master/docs/board2.png" width="300px">
+        </td>
+    </tr>
+</table>
+
+<table align="center">
+    <tr>
+        <td>
+            <img src="https://github.com/IsaacWatt/Watan/blob/master/docs/command-line1.png" width="350px">
         </td>
         <td>
-            <img src="https://github.com/IsaacWatt/Watan/blob/master/docs/command-line1.png" width="250px">
-        </td>
-        <td>
-            <img src="https://github.com/IsaacWatt/Watan/blob/master/docs/command-line2.png" width="250px">
+            <img src="https://github.com/IsaacWatt/Watan/blob/master/docs/command-line2.png" width="350px">
         </td>
     </tr>
 </table>
